@@ -13,4 +13,4 @@ And this isn’t the end stage yet. Standardization efforts mark a new way of de
 
 Mashup-like architectures will make developing new applications easier and less time-consuming. It’s a logical architectural change driven by the evolution in standards, frontend frameworks, and backend automation. We’re jumping on the train with [mu.semte.ch](http://mu.semte.ch/), and you’re free to take a ride with us.
 
-*This document has been adapted from Aad Verstend's mu.semte.ch article. You can view it [here](https://mu.semte.ch/2017/01/14/the-future-of-web-apps-is-mashed-up/)*
+*This document has been adapted from Aad Versteden's mu.semte.ch article. You can view it [here](https://mu.semte.ch/2017/01/14/the-future-of-web-apps-is-mashed-up/)*

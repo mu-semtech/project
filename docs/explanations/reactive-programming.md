@@ -33,4 +33,4 @@ We have ran advanced experiments and have PoCs of the necessary tooling for reac
 
 The [delta-service](https://github.com/mu-semtech/mu-delta-service) calculates triples that would be changed by the execution of an update query.  It can inform other services about these changes so they can update as necessary.  We are building some example microservices leveraging this approach, whilst applying the concept to end-user PoC applications.
 
-*This document has been adapted from Aad Verstend's mu.semte.ch article. You can view it [here](https://mu.semte.ch/2017/02/09/reactive-programming/)*
+*This document has been adapted from Aad Versteden's mu.semte.ch article. You can view it [here](https://mu.semte.ch/2017/02/09/reactive-programming/)*
