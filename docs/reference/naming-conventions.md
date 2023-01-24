@@ -22,3 +22,5 @@ Roughly speaking, we distinguish between 5 types of components in the mu.semte.
 **Utilities** is the collective term of all tools that facilitate the initiation and development of a mu.semte.ch application. Since they are so diverse, they don’t follow a strict naming convention. The name just tries to cover the functionality. Nonetheless, similar utilities have a similar name. For example, all generators are postfixed with ‘-generator’.
 
 All the components are published on GitHub where they are also added tagged so you can easily find what you’re looking for. E.g. the core components are tagged with ‘mu-project’, while the services are tagged with ‘mu-service’ etc. All the rules described above are just some simple and straightforward naming conventions, but adhering to them may drastically speed up the search process in the future.
+
+*This document has been adapted from Erika Pauwels' mu.semte.ch article. You can view it [here](https://mu.semte.ch/2017/06/22/find-your-way-through-the-stack/)*

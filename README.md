@@ -14,4 +14,5 @@ If you want more information behind the design of semantic.works, you can read t
     - [All or nothing fails to innovate](docs/discussions/experimentation.md#all-or-nothing-fails-to-innovate)
     - [mu.semte.ch as the ideal playground](docs/discussions/experimentation.md#musemtech-as-the-ideal-playground)
 
-*This document has been adapted from Erika Pauwels' mu.semte.ch article. You can view it [here](https://mu.semte.ch/2017/06/22/find-your-way-through-the-stack/)*
+## How-to
+- [Develop with your local IDE and tools inside a Docker container](docs/how-to/developing-inside-containers.md)
