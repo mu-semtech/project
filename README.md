@@ -2,6 +2,7 @@ This repository is used to track issues that apply cross-services in the full se
 
 ## Reference
 - [Naming conventions](docs/reference/naming-conventions.md)
+- [Documentation](docs/reference/documentation.md)
 
 ## Discussions
 If you want more information behind the design of semantic.works, you can read the following discussions:
