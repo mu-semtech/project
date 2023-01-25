@@ -1,8 +1,10 @@
 This repository is used to track issues that apply cross-services in the full semantic.works stack.
 
 ## Reference
+For technical information in semantic.works, you can see the following references:
 - [Naming conventions](docs/reference/naming-conventions.md)
 - [Documentation](docs/reference/documentation.md)
+- [Represting logged in users](docs/reference/representing-logged-in-users.md)
 
 ## Discussions
 If you want more information behind the design of semantic.works, you can read the following discussions:
