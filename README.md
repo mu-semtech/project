@@ -15,6 +15,7 @@ If you want more information behind the design of semantic.works, you can read t
     - [All or nothing fails to innovate](docs/discussions/experimentation.md#all-or-nothing-fails-to-innovate)
     - [mu.semte.ch as the ideal playground](docs/discussions/experimentation.md#musemtech-as-the-ideal-playground)
 - [Reactive programming](docs/discussions/reactive-programming.md)
+- [Sharing authorization](docs/discussions/sharing-authorization.md)
 - [Smaller & readable code](docs/discussions/smaller-readable-code.md)
 - [Docker multi-stage builds benefits](docs/discussions/docker-multi-stage-builds.md)
 - [Supporting MacOS](docs/discussions/supporting-mac-os.md)
