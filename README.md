@@ -17,6 +17,7 @@ If you want more information behind the design of semantic.works, you can read t
 - [Reactive programming](docs/discussions/reactive-programming.md)
 - [Smaller & readable code](docs/discussions/smaller-readable-code.md)
 - [Docker multi-stage builds benefits](docs/discussions/docker-multi-stage-builds.md)
+- [Supporting MacOS](docs/discussions/supporting-mac-os.md)
 
 ## How-to
 - [Develop with your local IDE and tools inside a Docker container](docs/how-to/developing-inside-containers.md)
