@@ -19,3 +19,9 @@ If you want more information behind the design of semantic.works, you can read t
 
 ## How-to
 - [Develop with your local IDE and tools inside a Docker container](docs/how-to/developing-inside-containers.md)
+
+
+## Writeups
+Our retrospectives on...
+- [OSLO²](writeups/oslo2.md)
+- [Dockercon EU 2017](writeups/dockercon-eu-2017.md)
