@@ -61,7 +61,7 @@ and then you add a app.js file where you enter something like
 With this you have your first javascript microservice that will respond to the ‘/’ route with a simple hello world string (I know not entirely true, you will also need to configure the dispatcher but for that look at our docs on [mu.semte.ch](http://mu.semte.ch/)). After this you can go wild with javascript and you don’t have to worry about the boring stuff that make the webservice tick, allow you to write/read to the database, etc.
 
 ### Other languages
-If we compare this with the [ruby template](https://mu.semte.ch/2017/04/13/building-your-first-microservice-with-sinatra/) then we find that for ruby your FROM statement is slightly different (you guess what changes) and instead of a app.js file you now create a web.rb file and again the simplest form looks almost like the example above.
+If we compare this with the [ruby template](https://github.com/mu-semtech/mu-ruby-template#building-your-first-microservice-with-sinatra/) then we find that for ruby your FROM statement is slightly different (you guess what changes) and instead of a app.js file you now create a web.rb file and again the simplest form looks almost like the example above.
 
 Suppose you want to go for python? Well exactly the same.
 
