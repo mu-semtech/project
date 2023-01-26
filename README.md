@@ -11,6 +11,7 @@ If you want more information behind the design of semantic.works, you can read t
 - **Why semantic...**
     - [... technology?](docs/discussions/why-semantic-tech.md)
     - [... microservices?](docs/discussions/why-semantic-microservices.md)
+- [mu.semte.ch primer](docs/discussions/mu-semtech-primer.md)
 - **Experimentation**
     - [All or nothing fails to innovate](docs/discussions/experimentation.md#all-or-nothing-fails-to-innovate)
     - [mu.semte.ch as the ideal playground](docs/discussions/experimentation.md#musemtech-as-the-ideal-playground)
