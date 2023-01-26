@@ -11,11 +11,12 @@ If you want more information behind the design of semantic.works, you can read t
 - **Why semantic...**
     - [... technology?](docs/discussions/why-semantic-tech.md)
     - [... microservices?](docs/discussions/why-semantic-microservices.md)
-- [Reactive programming](docs/discussions/reactive-programming.md)
-- [Smaller & readable code](docs/discussions/smaller-readable-code.md)
 - **Experimentation**
     - [All or nothing fails to innovate](docs/discussions/experimentation.md#all-or-nothing-fails-to-innovate)
     - [mu.semte.ch as the ideal playground](docs/discussions/experimentation.md#musemtech-as-the-ideal-playground)
+- [Reactive programming](docs/discussions/reactive-programming.md)
+- [Smaller & readable code](docs/discussions/smaller-readable-code.md)
+- [Docker multi-stage builds benefits](docs/discussions/docker-multi-stage-builds.md)
 
 ## How-to
 - [Develop with your local IDE and tools inside a Docker container](docs/how-to/developing-inside-containers.md)
