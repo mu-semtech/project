@@ -34,9 +34,8 @@ is the construction of a PoC (Proof of Concept). Then comes the
 standardisation, which requires some extra features to ensure the
 template can be used in practice.
 
-You can check the requirements for the PoC [here](../references/template-requirements.md#poc-proof-of-concept-requirements)
-
-And the requirements for the full template [here](../references/template-requirements.md#full-template-requirements)
+- **You can check the requirements for the PoC [here](../references/template-requirements.md#poc-proof-of-concept-requirements)**
+- **And the requirements for the full template [here](../references/template-requirements.md#full-template-requirements)**
 
 
 ## Levels of abstraction
