@@ -22,8 +22,8 @@ If you want more information behind the design of semantic.works, you can read t
 - [Supporting MacOS](docs/discussions/supporting-mac-os.md)
 
 ## How-to
-- [Develop with your local IDE and tools inside a Docker container](docs/how-to/developing-inside-containers.md)
-
+- [Develop with your local IDE and tools inside a Docker container](docs/how-tos/developing-inside-containers.md)
+- [Troubleshooting - Slow starting containers using 100% CPU](docs/how-tos/troubleshooting---slow-starting-containers.md)
 
 ## Writeups
 Our retrospectives on...
