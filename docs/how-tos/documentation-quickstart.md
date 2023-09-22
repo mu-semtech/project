@@ -46,3 +46,14 @@ Checklist:
 - [ ] Explains design decisions
 - [ ] Considers alternatives
 - [ ] Helps the reader make sense of things
+
+
+## Releasing a new version
+Once a new version of a semantic.works repository is made it should...
+- Be tagged using `git tag`
+- Have a DockerHub image with the same tag (NOTE: this happens automatically if your repository has a `.woodpecker/.tag.yml` configuration)
+
+*This will ensure that the documentations in app-mu-info get updated. See [project/discussions/how-tos/documentation-structure](../discussions/documentation-structure.md) for more info*
+
+
+
