@@ -3,7 +3,6 @@ This repository is used to track issues that apply cross-services in the full se
 ## Reference
 For technical information in semantic.works, you can see the following references:
 - [Naming conventions](docs/references/naming-conventions.md)
-- [Documentation quickstart](docs/references/documentation-quickstart.md)
 - [Representing logged in users](docs/references/representing-logged-in-users.md)
 
 ## Discussions
@@ -24,6 +23,7 @@ If you want more information behind the design of semantic.works, you can read t
 - [Supporting MacOS](docs/discussions/supporting-mac-os.md)
 
 ## How-to
+- [Documentation quickstart](docs/how-tos/documentation-quickstart.md)
 - [Develop with your local IDE and tools inside a Docker container](docs/how-tos/developing-inside-containers.md)
 - [Troubleshooting - Slow starting containers using 100% CPU](docs/how-tos/troubleshooting---slow-starting-containers.md)
 
