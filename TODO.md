@@ -1,0 +1,1 @@
+- [ ] Expand semantic model example as requested by Aad
