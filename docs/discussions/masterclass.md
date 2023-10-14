@@ -72,8 +72,20 @@ These categories structure our re-usable code.
 #### Templates
 These are a base for a custom built microservice with minimal overhead. From these you should be able to have a microservice going in your preferred language in minutes.
 
-#### Configurable services  
-Services built to not require (a lot) more coding to implement a (generic) feature. For example, *mu-cl-resources* is an easily configurable solution in case you need to "list" resources (e.g. a shopping cart, people in a database...). Frontends are hard to re-use, as your customer will probably want a specific feel or implementation, but universal features can be re-used to 
+#### Services  
+(Configurable) services built to not require (a lot) more coding to implement a (generic) feature. For example, `mu-cl-resources` is an easily configurable solution in case you need to "list" resources (e.g. a shopping cart, people in a database...). Frontends are hard to re-use as your customer will probably want a specific feel or implementation, but universal features can be re-used to fit the needs of multiple projects.
+
+Services in the semantic.works stack should...
+- Contain hareable/re-usable/runnable functionality (see the paragraph above)
+- Require minimal configuration (sensible defaults are very okay)
+- Persist its state in the database
+- Be user facing (usually)
+
+Services can be found through...
+- Searching for the `mu-service` topic on GitHub
+- Finding projects extending the templates (e.g. `mu-javascript-template`)
+- Asking around
+
 
 #### Ember add-ons
 Like the configurable services, but for Ember.js frontend components and functionalities.
