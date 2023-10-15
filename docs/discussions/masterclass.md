@@ -8,17 +8,19 @@ In this document, you will learn the following:
 ## Core values
 ### Keep It Simple Stupid
 #### 1. Productivity through simplicity
-1a. **Efficient development:** We wanted to get stuff done, without the requirement of being an expert on every topic, or creating a system that only the computer would understand
-1b. **Clear overview:** Efficient development also comes in the form of overbloated applications, where you can easily lose track of what is handled where. We want to be able to look at a microservice and know immediately what it does.
+- 1a) **Efficient development:** We wanted to get stuff done, without the requirement of being an expert on every topic, or creating a system that only the computer would understand
+- 1b) **Clear overview:** Efficient development also comes in the form of overbloated applications, where you can easily lose track of what is handled where. We want to be able to look at a microservice and know immediately what it does.
 
 #### 2. Functionality through interoperability
-2a) **Maximize freedom:** There need to be rules: as few and liberating as possible. A lack of rules would cost interoperability, which would subsequently limit your freedom in the end.
-2b) **Expandability:** We also wanted orthogonal features: features that would extened eachother at no extra cost.
-2c) **Longevity:** Something built years ago should still work as expected.
+- 2a) **Maximize freedom:** There need to be rules: as few and liberating as possible. A lack of rules would cost interoperability, which would subsequently limit your freedom in the end.
+- 2b) **Expandability:** We also wanted orthogonal features: features that would extened eachother at no extra cost.
+- 2c) **Longevity:** Something built years ago should still work as expected.
 
 
 ### Not getting stuck
 #### 3. 
+
+<br>
 
 ## Design decisions
 ### Reuse everything
@@ -51,9 +53,9 @@ Semantic models have a bunch of advantages:
 ![A flow chart. Single Page App points to Identifier, Identifier to Dispatcher. Dispatcher points to 4 differently coloured blocks: they say Registration, Login, Resources, and Files. These all point towards a regular coloured block in between them. This block says Store & Sync, and it contains a Triplestore header, under which Ontology, Delta and Security are noted](../../assets/simple-mental-model-advanced.excalidraw.svg)
 ([micro](#micro))
 
-- The **identifier** will create a session cookie. This doesn't identify you as a person (as this depends on what is in the database), but it gives a general hook ([centralised communication](#centralised-communication))
-- The **dispatcher** will decide which **microservice** will be called for the made request
-- Then the **triplestore** will change the requested state, yield a response of what has changed in the database, read the information you requested...
+1. The **identifier** will create a session cookie. This doesn't identify you as a person (as this depends on what is in the database), but it gives a general hook ([centralised communication](#centralised-communication))
+2. The **dispatcher** will decide which **microservice** will be called for the made request
+3. Then the **triplestore** will change the requested state, yield a response of what has changed in the database, read the information you requested...
 
 For example: this setup also means that the other services don't care what registration method was used, as they all work from the same [semantic models](#semantic-models) and database, yet care about different aspects of it.
 
@@ -66,13 +68,56 @@ For example: this setup also means that the other services don't care what regis
 ### Docker & Docker-Compose
 Docker allows for most technologies to be used on most systems. Docker-Compose are YAML files describing the topology of Docker containers and how they interact whith eachother, which gives us a place to define a central structure of our project. ([Micro](#micro), [Standard API's](#standard-apis))
 
+#### Naming conventions:
+To ensure quick onboarding, a lot of our docker-compose files following a naming scheme:
+|           Filename            | Description |
+| ----------------------------- | ----------- |
+| `docker-compose.yml`          | General **production** setup, basis for all other docker-compose-*.yml |
+| `docker-compose.dev.yml`      | Overrides for **development** | 
+| `docker-compose.override.yml` | Overrides for specific systems/deployments. Do *not* commit |
+| `docker-compose.demo.yml`     | (Extra) Demo to help people get started |
+
+
+<br>
+
 ### Categories
 These categories structure our re-usable code.
+
+#### Applications (`app-*`)
+A full project, combining microservices into a full application. The structure is as seen above in [#Simple Mental Model](#simple-mental-model)
 
 #### Templates
 These are a base for a custom built microservice with minimal overhead. From these you should be able to have a microservice going in your preferred language in minutes.
 
-#### Services  
+Templates in the semantic.works stack allow...
+- Minimal setup time
+- Nudging (yet not enforcing) conventions
+- Flexpoints: e.g. allowing template updates where new features & conventions get added with minimal effort 
+
+There are also some guidelines to using a template most effectively:
+- Ground truth in database
+    *(Caching is allowed, but keep in sync with the db)*
+- Only talks to the database, not other microservices
+    *(If this happens, it's for a well thought out reason: it is the exception, not the rule)*
+- Limit abstractions
+    *Keep the service easy to understand from a first read*
+- Think about reuse
+    *(Split where others might reuse the service)*
+
+
+To allow for easier development, the templates...
+- Often support live reload, so you do not have to manually restart during development
+- Don't require (nor recommend) cloning the template repository. Simply using the Dockerfile is enough, and allows for a cleaner codebase
+- Some templates have a debugger on one of the ports
+
+
+#### Services (`*-service` / `mu-*`)
+##### Naming conventions:
+- Core service: `mu-*` (e.g. *mu-dispatcher*)
+- Regular service (repo): `*-service` (e.g. *acmidm-login-service*)
+- Regular service (image): `org-name/*-service` (e.g. *lblod/acmidm-login-service*)
+- Docker Compose name: `*` (e.g. *login*)
+
 (Configurable) services built to not require (a lot) more coding to implement a (generic) feature. For example, `mu-cl-resources` is an easily configurable solution in case you need to "list" resources (e.g. a shopping cart, people in a database...). Frontends are hard to re-use as your customer will probably want a specific feel or implementation, but universal features can be re-used to fit the needs of multiple projects.
 
 Services in the semantic.works stack should...
