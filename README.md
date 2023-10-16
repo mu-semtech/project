@@ -2,12 +2,33 @@
 This repository is used to store information and track issues that apply cross-services in the full semantic.works stack.
 
 ## Getting started
-If you do not know where to begin, check out any/all of the following
+If you do not know where to begin, check out any/all of the following documents:
 1. [discussions - design philosophy](docs/discussions/design-philosophy.md)
 2. [discussions - project categories](docs/discussions/project-categories.md)
 3. [how-tos - creating applications](docs/how-tos/creating-applications.md) or [how-tos - creating microservices](docs/how-tos/creating-microservices.md)
 4. [deploying applications](docs/how-tos/deploying-applications.md)
 
+
+## How-to
+### Create...
+- [Applications](docs/how-tos/creating-applications.md)
+- [Microservices](docs/how-tos/creating-microservices.md)
+- [Templates](#create-1)
+
+### Development
+- [Add services to your project](docs/how-tos/adding-services-to-your-project.md)
+- [Deploy applications](docs/how-tos/deploying-applications.md)
+- [Quickstart writing documentation](docs/how-tos/quickstart-writing-documentation.md)
+
+### Troubleshooting
+- [Troubleshooting - Slow starting containers using 100% CPU](docs/how-tos/troubleshooting---slow-starting-containers.md)
+
+## Tutorials
+### Create...
+- [Templates](docs/tutorials/creating-templates.md)
+
+### Development
+- [Develop with your local IDE and tools inside a Docker container](docs/tutorials/developing-inside-containers.md)
 
 ## Reference
 For technical information in semantic.works, you can see the following references:
@@ -16,30 +37,18 @@ For technical information in semantic.works, you can see the following reference
 
 ## Discussions
 If you want more information behind the design of semantic.works, you can read the following discussions:
-- **Why semantic...**
-    - [... technology?](docs/discussions/why-semantic-tech.md)
-    - [... microservices?](docs/discussions/why-semantic-microservices.md)
-- [mu.semte.ch primer](docs/discussions/mu-semtech-primer.md)
-- [semantic.works' documentation structure](docs/discussions/documentation-structure.md)
-- **Experimentation**
-    - [All or nothing fails to innovate](docs/discussions/experimentation.md#all-or-nothing-fails-to-innovate)
-    - [mu.semte.ch as the ideal playground](docs/discussions/experimentation.md#musemtech-as-the-ideal-playground)
-- **The benefits of microservices through...**
-    - [Smaller & readable code](docs/discussions/smaller-readable-code.md)
+- [Design philosophy](docs/discussions/design-philosophy.md)
+- [Documentation structure](docs/discussions/documentation-structure.md)
+- [Project categories](docs/discussions/project-categories.md)
 - [Sharing authorization](docs/discussions/sharing-authorization.md)
-
-## How-to
-- [Documentation quickstart](docs/how-tos/documentation-quickstart.md)
-- [Troubleshooting - Slow starting containers using 100% CPU](docs/how-tos/troubleshooting---slow-starting-containers.md)
-
-## Tutorials
-- [Develop with your local IDE and tools inside a Docker container](docs/tutorials/developing-inside-containers.md)
-
 
 ## Writeups
 Perspectives on...
 - [Experimentation / all or nothing fails to innovate](writeups/perspectives/all-or-nothing-fails-to-innovate.md)
-- [Reactive programming](docs/discussions/reactive-programming.md)
+- [mu.semte.ch primer](writeups/perspectives/mu-semtech-primer.md)
+- [Reactive programming](writeups/perspectives/)
+- [Why semantic microservices](writeups/perspectives/why-semantic-microservices.md)
+- [Why semantic tech](writeups/perspectives/why-semantic-tech.md)
 
 Retrospectives on...
 - [Dockercon EU 2017](writeups/retrospectives/dockercon-eu-2017.md)

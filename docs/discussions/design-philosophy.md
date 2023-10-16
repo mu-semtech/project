@@ -28,14 +28,15 @@ In this document, you will learn the following:
 - Thanks to using technologies like JSON:API, services built years prior can still work as expected. ([2c: longevity](#2-functionality-through-interoperability))
 - Using these standards means more assumptions can be made and less code needs to be read ([1c: less required reading](#1-productivity-through-simplicity))
 
-### Centralised communication
-The microservices never talk to eachother directly. Instead they use a **shared linked-data** database. This is complemented by microservices using a semantic model. ([2a: maximize freedom & 2b: expandability](#2-functionality-through-interoperability))
-
 ### Semantic models
 ![A venndiagram of two circles. The registration service circle encapsulates E-mail, Date of birth, Username and Password. The login service circle goes over Username and Password](../../assets/shared-data-models.excalidraw.svg)
 Semantic models have a bunch of advantages:
 - They can easily be appended upon ([2b: expandability](#2-functionality-through-interoperability))
 - They allow re-using the same models: the same model can be used for username/password, OAuth, or even mock logins ([1a: efficient development, 1d: allow reusing](#1-productivity-through-simplicity), [2a: maximize freedom, 2b: expandability](#2-functionality-through-interoperability))
+
+### Centralised communication
+Microservices use a semantic model ([as seen above](#semantic-models)), but this is complemented by the fact that the microservices never talk to eachother directly. Instead they use a **shared linked-data** database. This replaces our need for a message queue. One can of course point out that such a message queue has several advantages, such as speed. But it also comes with a hidden disadvantage: namely every action taken or message sent has to be formatted in some way. This is yet again another dependency in your software system. Any microservice that you want include in your system and that needs to process the messages from certain other components will need to be developed with the knowledge of that message model in mind. ([2a: maximize freedom & 2b: expandability](#2-functionality-through-interoperability))
+
 
 ## Implementations
 
@@ -81,3 +82,4 @@ We structure our projects into different categories for easier re-use and discov
 *This document has been adapted by Denperidge from...*
 - *Aad Versteden's masterclass video series. You can view the original video [here]()*
 - *Jonathan Langens' mu.semte.ch article. You can view it [here](https://mu.semte.ch/2017/08/31/how-mu-semte-ch-can-help-you-beat-the-10-odds/)*
+*another Jonathan Langens' mu.semte.ch article. You can view it [here](https://mu.semte.ch/2017/06/15/semantic-micro-services-why-bother/)*
