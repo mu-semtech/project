@@ -1,16 +1,18 @@
 # Semantic.works (mu-semtech)
 This repository is used to store information and track issues that apply cross-services in the full semantic.works stack.
 
-If you do not know where to get started, check out any/all of the following
+## Getting started
+If you do not know where to begin, check out any/all of the following
 1. [discussions - design philosophy](docs/discussions/design-philosophy.md)
 2. [discussions - project categories](docs/discussions/project-categories.md)
 3. [how-tos - creating applications](docs/how-tos/creating-applications.md) or [how-tos - creating microservices](docs/how-tos/creating-microservices.md)
+4. [deploying applications](docs/how-tos/deploying-applications.md)
 
 
 ## Reference
 For technical information in semantic.works, you can see the following references:
-- [Naming conventions](docs/references/naming-conventions.md)
-- [Representing logged in users](docs/references/representing-logged-in-users.md)
+- [Commonly used headers](docs/reference/commonly-used-headers.md)
+- [Representing logged in users](docs/reference/representing-logged-in-users.md)
 
 ## Discussions
 If you want more information behind the design of semantic.works, you can read the following discussions:
