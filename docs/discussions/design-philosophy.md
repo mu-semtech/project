@@ -1,38 +1,32 @@
 # Masterclass
 In this document, you will learn the following:
-1. The core values of the semantic.works stack and their benefits
-2. How our design decisions reflect those values
-3. What this resulted in
-
+1. The [core values](#core-values) of the semantic.works stack and their benefits
+2. How our [design decisions](#design-decisions) reflect those values
+3. What [implementations](#implementations) this resulted in
 
 ## Core values
-### Keep It Simple Stupid
-#### 1. Productivity through simplicity
+### 1. Productivity through simplicity
 - 1a) **Efficient development:** We wanted to get stuff done, without the requirement of being an expert on every topic, or creating a system that only the computer would understand
-- 1b) **Clear overview:** Efficient development also comes in the form of overbloated applications, where you can easily lose track of what is handled where. We want to be able to look at a microservice and know immediately what it does.
+- 1b) **Clear overview:** Efficient development also comes in the form of overbloated applications, where you can easily lose track of what is handled where. We want to be able to look at a service and know immediately what it does.
+- 1c) **Less required reading**: There exists a saying in computer science that developers will end up with spending 90% of their time reading through code and 10% writing code. This reduces our effectiveness. For every line we write we will end up reading 10 lines first.
+- 1d) **Allow reusing**
 
-#### 2. Functionality through interoperability
+### 2. Functionality through interoperability
 - 2a) **Maximize freedom:** There need to be rules: as few and liberating as possible. A lack of rules would cost interoperability, which would subsequently limit your freedom in the end.
 - 2b) **Expandability:** We also wanted orthogonal features: features that would extened eachother at no extra cost.
 - 2c) **Longevity:** Something built years ago should still work as expected.
 
-
-### Not getting stuck
-#### 3. 
-
 <br>
 
 ## Design decisions
-### Reuse everything
-- Small but focused services allow reusing everything ([1a](#1-productivity-through-simplicity))
-
 ### Micro
-- Small but focused services allow reusing everything ([1a](#1-productivity-through-simplicity))
-- They are oftenly very easy to read, allowing a basic understanding even for those who do not know the language or framework in question
-- Due to the small size of the services, debugging is easier: there are only a few hundred lines of code per service ([1a: efficient development & 1b: clear overview](#1-productivity-through-simplicity)).
+- By isolating functionality by the boundaries of a microservice you get small but focused services: making them reusable easy to understand ([1a: efficient development](#1-productivity-through-simplicity)) 
+- They are oftenly very easy to read, allowing a basic understanding even for those who do not know the language or framework in question ([1c: less required reading](#1-productivity-through-simplicity))
+- Due to the small size of the services, debugging is easier: there are only a few hundred lines of code per service. Even if those 100 lines are important and take you longer to read, it reduces the area you need to look in ([1a: efficient development & 1b: clear overview](#1-productivity-through-simplicity)).
 
 ### Standard API's
 - Thanks to using technologies like JSON:API, services built years prior can still work as expected. ([2c: longevity](#2-functionality-through-interoperability))
+- Using these standards means more assumptions can be made and less code needs to be read ([1c: less required reading](#1-productivity-through-simplicity))
 
 ### Centralised communication
 The microservices never talk to eachother directly. Instead they use a **shared linked-data** database. This is complemented by microservices using a semantic model. ([2a: maximize freedom & 2b: expandability](#2-functionality-through-interoperability))
@@ -41,7 +35,7 @@ The microservices never talk to eachother directly. Instead they use a **shared 
 ![A venndiagram of two circles. The registration service circle encapsulates E-mail, Date of birth, Username and Password. The login service circle goes over Username and Password](../../assets/shared-data-models.excalidraw.svg)
 Semantic models have a bunch of advantages:
 - They can easily be appended upon ([2b: expandability](#2-functionality-through-interoperability))
-- They allow re-using the same models: the same model can be used for username/password, OAuth, or even mock logins ([2a: Maximize freedom, 2b: Expandability](#2-functionality-through-interoperability))
+- They allow re-using the same models: the same model can be used for username/password, OAuth, or even mock logins ([1a: efficient development, 1d: allow reusing](#1-productivity-through-simplicity), [2a: maximize freedom, 2b: expandability](#2-functionality-through-interoperability))
 
 ## Implementations
 
@@ -84,4 +78,6 @@ To ensure quick onboarding, a lot of our docker-compose files following a naming
 We structure our projects into different categories for easier re-use and discoverability. Please check out [project-categories.md](project-categories.md)
 
 
-*This document has been adapted by Denperidge from Aad Versteden's masterclass 01 - How and why pt1, pt & pt3. You can view the original video [here]()*
+*This document has been adapted by Denperidge from...*
+- *Aad Versteden's masterclass video series. You can view the original video [here]()*
+- *Jonathan Langens' mu.semte.ch article. You can view it [here](https://mu.semte.ch/2017/08/31/how-mu-semte-ch-can-help-you-beat-the-10-odds/)*
