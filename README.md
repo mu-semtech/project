@@ -1,4 +1,9 @@
-This repository is used to track issues that apply cross-services in the full semantic.works stack.
+# Semantic.works (mu-semtech)
+This repository is used to store information and track issues that apply cross-services in the full semantic.works stack.
+
+If you do not know where to get started, check out any/all of the following
+- 
+
 
 ## Reference
 For technical information in semantic.works, you can see the following references:

@@ -1,0 +1,1 @@
+Some of these files end with `excalidraw.svg`. This means that they were generated - and can be edited with - excalidraw.
