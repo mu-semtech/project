@@ -1,38 +1,64 @@
 # Semantic.works (mu-semtech)
 This repository is used to store information and track issues that apply cross-services in the full semantic.works stack.
 
-If you do not know where to get started, check out any/all of the following
-- 
+## Getting started
+If you do not know where to begin, check out any/all of the following documents:
+1. Read about why and how the semantic.works stack works: [discussions - design philosophy](docs/discussions/design-philosophy.md)
+2. Recognising our different project types and how they help you: [discussions - project categories](docs/discussions/project-categories.md)
+3. Learn how to [create a full-fledged application](docs/how-tos/creating-applications.md) or a [microservice to support it](docs/how-tos/creating-microservices.md)
+4. Learn how to ideally [deploy your applications](docs/how-tos/deploying-applications.md)
 
+
+## How-to
+### Create...
+- [Applications](docs/how-tos/creating-applications.md)
+- [Microservices](docs/how-tos/creating-microservices.md)
+- [Templates](#create-1)
+
+### Development
+- [Add services to your project](docs/how-tos/adding-services-to-your-project.md)
+- [Deploy applications](docs/how-tos/deploying-applications.md)
+- [Quickstart writing documentation](docs/how-tos/quickstart-writing-documentation.md)
+
+### Troubleshooting
+- [Troubleshooting - Slow starting containers using 100% CPU](docs/how-tos/troubleshooting---slow-starting-containers.md)
+
+## Tutorials
+### Create...
+- [Templates](docs/tutorials/creating-templates.md)
+
+### Development
+- [Develop with your local IDE and tools inside a Docker container](docs/tutorials/developing-inside-containers.md)
 
 ## Reference
 For technical information in semantic.works, you can see the following references:
-- [Naming conventions](docs/references/naming-conventions.md)
-- [Representing logged in users](docs/references/representing-logged-in-users.md)
+- [Commonly used headers](docs/reference/commonly-used-headers.md)
+- [Representing logged in users](docs/reference/representing-logged-in-users.md)
 
 ## Discussions
 If you want more information behind the design of semantic.works, you can read the following discussions:
-- **Why semantic...**
-    - [... technology?](docs/discussions/why-semantic-tech.md)
-    - [... microservices?](docs/discussions/why-semantic-microservices.md)
-- [mu.semte.ch primer](docs/discussions/mu-semtech-primer.md)
-- [semantic.works' documentation structure](docs/discussions/documentation-structure.md)
-- **Experimentation**
-    - [All or nothing fails to innovate](docs/discussions/experimentation.md#all-or-nothing-fails-to-innovate)
-    - [mu.semte.ch as the ideal playground](docs/discussions/experimentation.md#musemtech-as-the-ideal-playground)
-- **The benefits of microservices through...**
-    - [Reactive programming](docs/discussions/reactive-programming.md)
-    - [Smaller & readable code](docs/discussions/smaller-readable-code.md)
+- [Design philosophy](docs/discussions/design-philosophy.md)
+- [Documentation structure](docs/discussions/documentation-structure.md)
+- [Project categories](docs/discussions/project-categories.md)
 - [Sharing authorization](docs/discussions/sharing-authorization.md)
-- [Docker multi-stage builds benefits](docs/discussions/docker-multi-stage-builds.md)
-- [Supporting MacOS](docs/discussions/supporting-mac-os.md)
-
-## How-to
-- [Documentation quickstart](docs/how-tos/documentation-quickstart.md)
-- [Develop with your local IDE and tools inside a Docker container](docs/how-tos/developing-inside-containers.md)
-- [Troubleshooting - Slow starting containers using 100% CPU](docs/how-tos/troubleshooting---slow-starting-containers.md)
 
 ## Writeups
-Our retrospectives on...
-- [OSLO²](writeups/oslo2.md)
-- [Dockercon EU 2017](writeups/dockercon-eu-2017.md)
+Perspectives on...
+- [Experimentation / all or nothing fails to innovate](writeups/perspectives/all-or-nothing-fails-to-innovate.md)
+- [mu.semte.ch primer](writeups/perspectives/mu-semtech-primer.md)
+- [Reactive programming](writeups/perspectives/)
+- [Why semantic microservices](writeups/perspectives/why-semantic-microservices.md)
+- [Why semantic tech](writeups/perspectives/why-semantic-tech.md)
+
+Retrospectives on...
+- [Dockercon EU 2017](writeups/retrospectives/dockercon-eu-2017.md)
+- [Developerweek 2018](writeups/retrospectives/developerweek-2018.md)
+- [OSLO²](writeups/retrospectives/oslo2.md)
+
+- [Semantic.works - Implementing Docker multi-stage builds benefits](writeups/retrospectives/sw-implementing-docker-multi-stage-builds.md)
+- [Semantic.works - Microservice reuse and authorization](writeups/retrospectives/sw-microservice-reuse-and-authorization.md)
+- [Semantic.works - Supporting MacOS](writeups/retrospectives/sw-supporting-mac-os.md)
+
+Or..
+- Discover who governs semantic.works in [who - mu-semtech](writeups/who---mu-semtech.md)
+- Find our external publications in [publictations](writeups/publications.md)
