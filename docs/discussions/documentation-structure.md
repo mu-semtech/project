@@ -17,7 +17,7 @@ If we're copying documentation/text across places, we're doing something wrong:
 - This requires extra upkeep/work, breaching [(3) ease of use: writers](#3-ease-of-use-writers)
 
 ### 2. All-encompassing
-Many documentations are incredibly lacking, as you've probably experienced over your time as a developer. The divio documentation standard, which you can view on [documentation.divio.com](https://documentation.divio.com/), attempts to clearly outline *what* should be documented, and *where* you can organise it. While I recommend viewing the talk and/or text on their website, a [quick start is included in this repository's how-tos](../how-tos/documentation-quickstart.md).
+Many documentations are incredibly lacking, as you've probably experienced over your time as a developer. The divio documentation standard, which you can view on [documentation.divio.com](https://documentation.divio.com/), attempts to clearly outline *what* should be documented, and *where* you can organise it. While I recommend viewing the talk and/or text on their website, a [quick start is included in this repository's how-tos](../how-tos/quickstart-writing-documentation.md).
 
 ### 3. Ease of use: writing
 Minimising maintenance for the people who make the code is essential. Lots of people do not have the time, resources, training, or quite simply the desire to write down docs. This is one of the reasons we stay away from external documentation sites like gitbook: having them sign in to a whole different platform to write the documentation for their code would be way too much friction. This would also make us reliant on the external documentation provider, breaching [(6) Non-proprietary](#6-non-proprietary), and would require navigating to an external location for readers and writers alike, thus additionally breaching [(4) Ease of use: reading](#4-ease-of-use-reading).
@@ -45,7 +45,7 @@ All documentation ends up in one of the following places
 - If it's something useful for people getting started with the semantic works stack as a whole, it should go in the `mu-project` repository. 
 - If it's about a specific microservice or project, it should go inside of that projects repository
 
-The documentation should ideally be written as presented in [project/how-tos/documentation-quickstart](../how-tos/documentation-quickstart.md). This also covers how to tag new revisions.
+The documentation should ideally be written as presented in [project/how-tos/quickstart-writing-documentation](../how-tos/quickstart-writing-documentation.md). This also covers how to tag new revisions.
 
 For microservice developers and most people working on semantic.works, this is all you have to do! This will ensure that most design principles are met. However, to have a more readily available & traditionally structured documentation, the following steps get executed.
 
