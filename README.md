@@ -3,10 +3,10 @@ This repository is used to store information and track issues that apply cross-s
 
 ## Getting started
 If you do not know where to begin, check out any/all of the following documents:
-1. [discussions - design philosophy](docs/discussions/design-philosophy.md)
-2. [discussions - project categories](docs/discussions/project-categories.md)
-3. [how-tos - creating applications](docs/how-tos/creating-applications.md) or [how-tos - creating microservices](docs/how-tos/creating-microservices.md)
-4. [deploying applications](docs/how-tos/deploying-applications.md)
+1. Read about why and how the semantic.works stack works: [discussions - design philosophy](docs/discussions/design-philosophy.md)
+2. Recognising our different project types and how they help you: [discussions - project categories](docs/discussions/project-categories.md)
+3. Learn how to [create a full-fledged application](docs/how-tos/creating-applications.md) or a [microservice to support it](docs/how-tos/creating-microservices.md)
+4. Learn how to ideally [deploy your applications](docs/how-tos/deploying-applications.md)
 
 
 ## How-to
