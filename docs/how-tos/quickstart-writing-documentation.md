@@ -2,7 +2,7 @@
 - Our documentation follows the amazing documentation system used at Divio. [You can view the 30min talk and/or documentation on their website](https://documentation.divio.com/), and/or use the [checklist below](#checklist) to see if the documentation you've written fits.
 - The docs...
     - ... about semantic microservices/mu-semtech as a whole should be located in this repository ([mu-semtech/project](https://github.com/mu-semtech/project)).
-    - ... that would be good for a first-timer should be located in [the mu-semtech/mu-project repo](https://github.com/mu-semtech/mu-project))
+    - ... that would be good for a first-timer should be located in [the mu-semtech/mu-project repo](https://github.com/mu-semtech/mu-project)
     - ... concerning specific microservices should be located inside their respective repositories.
 
 
